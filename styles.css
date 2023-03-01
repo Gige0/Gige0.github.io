@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(66, 65, 111);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    margin: 0;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.box {
+    background: #fff;
+    width: 50rem;
+    padding: 3rem;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+}
+
+.header-left {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.header-center {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 500%;
+}
+
+.header-right {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-items: end;
+}
+
+.header-right p {
+    display: inline;
+}
+.fist-name {
+    font-weight: 400;
+    margin: 0;
+}
+
+.last-name{
+    font-weight: 50;
+    margin: 0;
+}
+
+table{
+    border: 3px solid #000;
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+img {
+    margin-left: 0rem;
+    width: 70% ;
+}
+
+.accordion_button {
+    background-color: rgb(58, 211, 124);
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.2s;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.accordion_button::after {
+    content:'\25be';
+    float: right;
+    transform: scale(1.5);
+}
+
+.accordion_button--active {
+    background: rgb(123, 216, 164);
+}
+
+.accordion_button--active::after {
+    content: '\25b4';
+}
+
+.accordion_content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s;
+    padding: 2px 15px;
+
+}
